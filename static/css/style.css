@@ -315,7 +315,7 @@ img {
 }
 
 .card-container {
-    background: url("../images//background-design.svg");
+    background: url("../images/background-design.svg");
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -575,7 +575,7 @@ footer {
     /* =========MetaData============ */
     .meta-section {
         text-align: left;
-        background: url("../images/Frame\ 293.jpg");
+        background: url("../images/Frame/ 293.jpg");
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
