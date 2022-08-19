@@ -25,7 +25,7 @@ class Contact(models.Model):
 
 class Profile(models.Model):
     # Delete profile when user is deleted
-    user = models.OneToOneField(User, on_delete=models.do_nothing)
+    user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
     profile_pic = models.ImageField(
         default='default.jpg', upload_to='profile_pics', null=True, blank=True)
 
@@ -38,7 +38,7 @@ class History(models.Model):
     name = models.CharField(max_length=200)
     #size = models.IntegerField()
     data = models.TextField(null=True)
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.do_nothing)
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.DO_NOTHING)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -48,7 +48,7 @@ class History(models.Model):
 class Files(models.Model):
     file_name = models.CharField(max_length=200)
     uploaded_file = models.FileField()
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.do_nothing)
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.DO_NOTHING)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
