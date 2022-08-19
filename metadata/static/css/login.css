@@ -1,5 +1,5 @@
-@import url("../css/main.css");
-@import url("../css/font.css");
+@import url("main.css");
+@import url("font.css");
 
 
 
@@ -157,7 +157,7 @@ input[type="textarea"] {
 input[type="email"]::placeholder {
   font-size: 16px;
   padding-left: 30px;
-  background-image: url("img/sms.svg");
+  background-image: url("../images/img/sms.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
