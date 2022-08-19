@@ -261,9 +261,8 @@ header {
 }
 
 /* Why Meta Data */
-
 .meta-section {
-    background: url("img/Frame\ 293.jpg");
+    background: url("../images/Frame 293.jpg");
     background-size: calc(100%);
     /* background-position: center; */
     padding: 50px 0;
