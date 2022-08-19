@@ -1,9 +1,7 @@
 @import url("font.css");
 /* @import url('fonts/cabinetgrotesk-bold.woff2'); */
 
-    {
-    % load static %
-}
+    /* {% load static %} */
 
 /* Global styling */
 
@@ -658,7 +656,6 @@ footer {
         padding: 20px;
         margin-bottom: 20px;
         width: 100%;
-        font-size: ;
     }
 
 
