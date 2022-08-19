@@ -36,7 +36,7 @@
 }
 
 #login-left {
-    background-image: url('img/Frame\ 1177.png');
+    background-image: url('../images/Frame 1177.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -185,7 +185,6 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
-}
   
 input[type=button]:hover {
     background-color: var(--blue);
