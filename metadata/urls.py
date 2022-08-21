@@ -1,6 +1,8 @@
 from imp import get_magic
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from . import views
 from django.contrib.auth import views as auth_views
 
@@ -37,3 +39,7 @@ urlpatterns = [
     path("referral/<int:pk>/<int:ak>", views.referral, name="referral"),
     path("download_meta/<int:pk>", views.download_meta, name="download_meta")
 ]
+urlpatterns += static(settings.MEDIA_URL,
+                      document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL,
+                      document_root=settings.STATIC_ROOT)

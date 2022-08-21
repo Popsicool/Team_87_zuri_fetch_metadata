@@ -26,7 +26,8 @@ class Contact(models.Model):
 class Profile(models.Model):
     # Delete profile when user is deleted
     user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
-    profile_pic = models.ImageField(upload_to='profile_pics', null=True, blank=True)
+    profile_pic = models.ImageField(
+        default='default.jpg', upload_to='profile_pics', null=True, blank=True)
 
     def __str__(self):
         # show how we want it to be displayed
